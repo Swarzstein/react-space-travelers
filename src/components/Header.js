@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './assets/planet.png';
+import logo from '../assets/planet.png';
 
 export default function Header() {
   return (
