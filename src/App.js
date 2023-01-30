@@ -1,6 +1,6 @@
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
-import Missions from './components/missions';
+import Missions from './components/Missions';
 
 function App() {
   return (
