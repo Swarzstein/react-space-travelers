@@ -25,11 +25,16 @@ nav {
 .header-nav-links {
   list-style: none;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   gap: 2rem;
+}
+
+.header-nav-links li a {
+  text-decoration: none;
 }
 
 .nav-divider {
   height: 1.5rem;
   border: solid 1px black;
 }
+
