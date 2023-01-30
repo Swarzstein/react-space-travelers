@@ -10,10 +10,11 @@ export default function Header() {
         <h1>Space Travelers&apos; Hub</h1>
       </div>
       <nav>
-        <ul>
-          <NavLink to="/">Rockets</NavLink>
-          <NavLink to="missions">Missions</NavLink>
-          <NavLink to="MyProfile">My Profile</NavLink>
+        <ul className="header-nav-links">
+          <li><NavLink to="/">Rockets</NavLink></li>
+          <li><NavLink to="missions">Missions</NavLink></li>
+          <div className="nav-divider" />
+          <li><NavLink to="MyProfile">My Profile</NavLink></li>
         </ul>
       </nav>
     </header>

@@ -17,3 +17,19 @@
 .flex {
   display: flex;
 }
+
+nav {
+  width: 50%;
+}
+
+.header-nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: end;
+  gap: 2rem;
+}
+
+.nav-divider {
+  height: 1.5rem;
+  border: solid 1px black;
+}
