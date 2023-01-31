@@ -33,6 +33,10 @@ nav {
   text-decoration: none;
 }
 
+.active {
+  text-decoration: underline !important;
+}
+
 .nav-divider {
   height: 1.5rem;
   border: solid 1px black;
