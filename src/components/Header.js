@@ -12,7 +12,7 @@ export default function Header() {
       <nav>
         <ul className="header-nav-links">
           <li><NavLink to="/">Rockets</NavLink></li>
-          <li><NavLink to="missions">Missions</NavLink></li>
+          <li><NavLink to="/missions" style={({ isActive }) => ({ textDecoration: isActive ? 'underline' : 'none' })}>Missions</NavLink></li>
           <div className="nav-divider" />
           <li><NavLink to="MyProfile">My Profile</NavLink></li>
         </ul>
