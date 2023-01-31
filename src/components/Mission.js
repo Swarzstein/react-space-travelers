@@ -1,10 +1,13 @@
 import React from 'react';
+import propTypes from 'prop-types';
 
 const Mission = ({ name, description }) => (
-  <div>
-    <h1>{name}</h1>
-    <h2>{description}</h2>
-  </div>
+  <ul className="table-content">
+    <li className="mission-title">{name}</li>
+    <li className="mission-description">{description}</li>
+    <li className="mission-description">Active</li>
+    <li className="mission-description">Join</li>
+  </ul>
 );
 
 export default Mission;
