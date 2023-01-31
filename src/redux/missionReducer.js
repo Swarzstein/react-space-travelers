@@ -1,20 +1,18 @@
-import { createSlice } from '@reduxjs/toolkit';
-
-// const GET_MISSIONS = 'GET_MISSIONS';
+const GET_MISSIONS = 'GET_MISSIONS';
 
 const initialState = [];
 
-// const getMission = () => ({ type: GET_MISSIONS });
+const getMission = () => ({ type: GET_MISSIONS });
 
-const missionSlice = createSlice({
-  name: 'mission',
-  initialState,
-  reducers: {
-    GET_MISSIONS: (action) => action.payload,
-  },
-});
+const missionReducer = (state = initialState, action) => {
+  switch (action.type) {
+    case GET_MISSIONS: return { ...state, loading: true };
+    default: return state;
+  }
+};
 
-export const missionFetch = async () => {
+export const missionFetch = async (dispatch) => {
+  dispatch(getMission());
   try {
     const res = await fetch('https://api.spacexdata.com/v3/missions');
     const data = await res.json();
@@ -38,4 +36,4 @@ missionFetch();
 // eslint-disable-next-line no-console
 console.log(123);
 
-export default missionSlice.reducer;
+export default missionReducer;
