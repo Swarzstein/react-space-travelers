@@ -2,7 +2,6 @@ import React from 'react';
 
 export default function Rocket(props) {
   const rocket = props;
-  console.log(rocket);
   return (
     <div>
       <div>
