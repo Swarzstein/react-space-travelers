@@ -6,7 +6,9 @@ const Mission = ({ name, description }) => (
     <li className="mission-title">{name}</li>
     <li className="mission-description">{description}</li>
     <li className="mission-description">Active</li>
-    <li className="mission-description">Join</li>
+    <li className="mission-description">
+      <button type="button">Join</button>
+    </li>
   </ul>
 );
 
