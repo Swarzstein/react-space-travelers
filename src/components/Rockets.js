@@ -11,9 +11,9 @@ export default function Rockets() {
           <Rocket
             key={rocket.id}
             id={rocket.id}
-            name={rocket.name}
+            name={rocket.rocket_name}
             description={rocket.description}
-            image={rocket.image}
+            image={rocket.flickr_images[0]}
           />
         ),
       )}
