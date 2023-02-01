@@ -22,7 +22,13 @@ const Missions = () => {
       </ul>
       {missions.map((el) => (
         <>
-          <Mission key={el.mission_id} description={el.description} name={el.mission_name} />
+          <Mission
+            key={el.mission_id}
+            id={el.mission_id}
+            description={el.description}
+            reserved={el.reserved}
+            name={el.mission_name}
+          />
         </>
       ))}
     </div>
