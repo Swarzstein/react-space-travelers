@@ -41,3 +41,21 @@ nav {
   height: 1.5rem;
   border: solid 1px black;
 }
+
+.table-title {
+  list-style: none;
+  display: flex;
+}
+
+.table-content {
+  list-style: none;
+  display: flex;
+}
+
+.mission-title {
+  width: 15%;
+}
+
+.mission-description {
+  width: 50%;
+}
