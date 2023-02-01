@@ -16,9 +16,9 @@ const Missions = () => {
     <div>
       <ul className="table-title">
         <li className="mission-title">Mission</li>
-        <li className="mission-description">Description</li>
-        <li>Status</li>
-        <li />
+        <li className="mission-description description-text">Description</li>
+        <li className="mission-active status-text">Status</li>
+        <li className="mission-join" />
       </ul>
       {missions.map((el) => (
         <>
