@@ -12,6 +12,7 @@
   font-size: calc(10px + 2vmin);
   color: #000;
   padding: 1rem;
+  margin-bottom: 1rem;
 }
 
 .flex {
@@ -45,11 +46,26 @@ nav {
 .table-title {
   list-style: none;
   display: flex;
+  border: 1px solid gray;
+  margin: auto;
+  width: 95%;
+}
+
+.table-title li {
+  margin: 0.5rem;
+  font-weight: bold;
 }
 
 .table-content {
   list-style: none;
   display: flex;
+  border: 1px solid gray;
+  margin: auto;
+  width: 95%;
+}
+
+.table-content li {
+  border: 1px solid gray;
 }
 
 .mission-title {
@@ -57,5 +73,34 @@ nav {
 }
 
 .mission-description {
-  width: 50%;
+  width: 60%;
+}
+
+.mission-active {
+  width: 15%;
+}
+
+.mission-join {
+  width: 15%;
+}
+
+.status-text {
+  padding-left: 17% !important;
+}
+
+.description-text {
+  padding-left: 3% !important;
+}
+
+.mission-join,
+.mission-active,
+.mission-description,
+.mission-title {
+  padding: 1rem;
+}
+
+.table-text-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

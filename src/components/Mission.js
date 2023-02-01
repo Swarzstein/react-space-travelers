@@ -21,8 +21,8 @@ const Mission = ({
     <ul className="table-content">
       <li className="mission-title">{name}</li>
       <li className="mission-description">{description}</li>
-      <li className="mission-description">Active</li>
-      <li className="mission-description">
+      <li className="mission-active table-text-center">Active</li>
+      <li className="mission-join table-text-center">
         <button onClick={() => handleClick(id)} type="button">{buttonText}</button>
       </li>
     </ul>
