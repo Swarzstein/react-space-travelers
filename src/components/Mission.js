@@ -16,12 +16,13 @@ const Mission = ({
   };
 
   const buttonText = reserved ? 'Leave Mission' : 'Join Mission';
+  const memberText = reserved ? 'Active Member' : 'Not a Member';
 
   return (
     <ul className="table-content">
       <li className="mission-title">{name}</li>
       <li className="mission-description">{description}</li>
-      <li className="mission-active table-text-center">Active</li>
+      <li className="mission-active table-text-center">{memberText}</li>
       <li className="mission-join table-text-center">
         <button onClick={() => handleClick(id)} type="button">{buttonText}</button>
       </li>
