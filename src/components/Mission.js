@@ -9,7 +9,7 @@ const Mission = ({
   const dispatch = useDispatch();
 
   // eslint-disable-next-line no-console
-  console.log(reserved);
+  console.log(id);
 
   const handleClick = (id) => {
     dispatch({ type: JOIN_MISSIONS, payload: id });
