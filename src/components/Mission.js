@@ -1,5 +1,4 @@
 import React from 'react';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import propTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { JOIN_MISSIONS } from '../redux/missionReducer';
