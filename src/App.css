@@ -156,6 +156,34 @@ nav {
   cursor: pointer;
 }
 
+.myprofile {
+  width: 80%;
+  margin: auto;
+}
+
+.myprofile_group {
+  display: flex;
+  margin: 2rem;
+}
+
+.myprofile_mission,
+.myprofile_rockets {
+  width: 30%;
+}
+
+.myprofile_mission {
+  margin-right: 9%;
+}
+
+.item-border {
+  padding: 1rem;
+  border: 1px solid lightgray;
+}
+
+.group-title {
+  margin-bottom: 9%;
+}
+
 #rockets {
   display: flex;
   flex-direction: column;
@@ -178,11 +206,6 @@ nav {
 
 .card-img img {
   width: inherit;
-  height: fit-content;
-}
-
-.card-info {
-  
 }
 
 .card-title {
@@ -195,7 +218,7 @@ nav {
 }
 
 .reserved {
-  background-color: #18A2B8;
+  background-color: #18a2b8;
   color: #fff;
   padding: 2px;
   border-radius: 0.3em;
@@ -203,7 +226,7 @@ nav {
 }
 
 .reserve-btn {
-  background-color: #007BFF;
+  background-color: #007bff;
   padding: 1rem;
   border: none;
   color: #fff;

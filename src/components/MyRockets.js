@@ -6,10 +6,10 @@ export default function MyRockets() {
   const myRockets = rockets.filter((rocket) => rocket.reserved);
   return (
     <div>
-      <h2>My Rockets</h2>
+      <h2 className="group-title">My Rockets</h2>
       <div>
         {myRockets.map((rocket) => (
-          <div key={rocket.id} className="my-rocket-item">
+          <div key={rocket.id} className="my-rocket-item item-border">
             {rocket.rocket_name}
           </div>
         ))}
