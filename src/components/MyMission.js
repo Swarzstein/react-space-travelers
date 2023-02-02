@@ -8,8 +8,9 @@ const MyMission = () => {
 
   return (
     <div>
+      <h2 className="group-title">My Missions</h2>
       { filter.map((el) => (
-        <div key={el.mission_id}>
+        <div className="item-border" key={el.mission_id}>
           {el.mission_name}
         </div>
       ))}
