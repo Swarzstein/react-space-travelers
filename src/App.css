@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400');
+
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 .App-header {
@@ -151,4 +154,68 @@ nav {
   font-size: 16px;
   border: none;
   cursor: pointer;
+}
+
+#rockets {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  padding: 1rem 3rem;
+  font-size: large;
+}
+
+.card {
+  height: 25vh;
+  display: flex;
+  gap: 1vw;
+}
+
+.card-img {
+  width: 15vw;
+  height: inherit;
+  display: flex;
+}
+
+.card-img img {
+  width: inherit;
+  height: fit-content;
+}
+
+.card-info {
+  
+}
+
+.card-title {
+  margin-bottom: 1rem;
+}
+
+.card-description {
+  margin-bottom: 0.7rem;
+  line-height: 1.5;
+}
+
+.reserved {
+  background-color: #18A2B8;
+  color: #fff;
+  padding: 2px;
+  border-radius: 0.3em;
+  margin-right: 5px;
+}
+
+.reserve-btn {
+  background-color: #007BFF;
+  padding: 1rem;
+  border: none;
+  color: #fff;
+  font-size: larger;
+  border-radius: 0.5em;
+}
+
+.cancel-btn {
+  background-color: #fff;
+  border: solid 1px #6d757d;
+  color: #6d757d;
+  font-size: larger;
+  padding: 1rem;
+  border-radius: 0.3em;
 }
