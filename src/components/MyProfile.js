@@ -1,7 +1,10 @@
 import React from 'react';
+import MyMission from './MyMission';
 
 const MyProfile = () => (
-  <div>MyProfile</div>
+  <div>
+    <MyMission />
+  </div>
 );
 
 export default MyProfile;

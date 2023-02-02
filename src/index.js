@@ -6,8 +6,10 @@ import store from './redux/store';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { getApiRockets } from './redux/rockets/rockets';
+import { missionFetch } from './redux/missionReducer';
 
 store.dispatch(getApiRockets());
+store.dispatch(missionFetch());
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
