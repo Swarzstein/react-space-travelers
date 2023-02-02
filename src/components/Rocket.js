@@ -14,17 +14,17 @@ export default function Rocket(props) {
   };
 
   return (
-    <div>
-      <div>
+    <div className="card">
+      <div className="card-img">
         <img src={rocket.image} alt="rocket" />
       </div>
-      <div>
-        <h3>{rocket.name}</h3>
-        <p>
-          {rocket.reserved && (<span className="reserved"> Reserved </span>)}
+      <div className="card-info">
+        <h3 className="card-title">{rocket.name}</h3>
+        <p className="card-description">
+          {rocket.reserved && (<span className="reserved">  Reserved</span>)}
           {rocket.description}
         </p>
-        {rocket.reserved ? <button type="button" onClick={() => cancelReservation(rocket.id)}>Cancel Recervation</button> : <button type="button" onClick={() => reserve(rocket.id)}>Reserve Rocket</button>}
+        {rocket.reserved ? <button type="button" className="cancel-btn" onClick={() => cancelReservation(rocket.id)}>Cancel Recervation</button> : <button type="button" className="reserve-btn" onClick={() => reserve(rocket.id)}>Reserve Rocket</button>}
       </div>
     </div>
   );
