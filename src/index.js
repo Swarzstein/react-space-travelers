@@ -1,14 +1,24 @@
 import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import { Provider } from 'react-redux';
+import store from './redux/store';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { getApiRockets } from './redux/rockets/rockets';
+import { missionFetch } from './redux/missionReducer';
 
+store.dispatch(getApiRockets());
+store.dispatch(missionFetch());
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <Provider store={store}>
+      <Router>
+        <App />
+      </Router>
+    </Provider>
+  </React.StrictMode>,
 );
 
 // If you want to start measuring performance in your app, pass a function
