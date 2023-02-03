@@ -1,38 +1,244 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #eee;
+  min-height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: calc(10px + 2vmin);
+  color: #000;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.flex {
+  display: flex;
+}
+
+nav {
+  width: 50%;
+}
+
+.header-nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+}
+
+.header-nav-links li a {
+  text-decoration: none;
+}
+
+.active {
+  text-decoration: underline !important;
+}
+
+.nav-divider {
+  height: 1.5rem;
+  border: solid 1px black;
+}
+
+.table-title {
+  list-style: none;
+  display: flex;
+  border: 1px solid gray;
+  margin: auto;
+  width: 95%;
+}
+
+.table-title li {
+  margin: 0.5rem;
+  font-weight: bold;
+}
+
+.table-content {
+  list-style: none;
+  display: flex;
+  border: 1px solid gray;
+  margin: auto;
+  width: 95%;
+}
+
+.table-content li {
+  border: 1px solid gray;
+}
+
+.mission-title {
+  width: 15%;
+}
+
+.mission-description {
+  width: 60%;
+}
+
+.mission-active {
+  width: 15%;
+}
+
+.mission-join {
+  width: 15%;
+}
+
+.status-text {
+  padding-left: 17% !important;
+}
+
+.description-text {
+  padding-left: 3% !important;
+}
+
+.mission-join,
+.mission-active,
+.mission-description,
+.mission-title {
+  padding: 1rem;
+}
+
+.table-text-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.join-button {
+  color: gray;
+  border: 1px solid gray;
+  padding: 0.3rem 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.leave-mission {
+  color: red;
+  border: 1px solid red;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 0.3rem 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.member-button {
+  color: white;
+  background-color: gray;
+  padding: 0.3rem 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.non-member {
+  background-color: rgb(56, 115, 115);
+  color: white;
+  padding: 0.3rem 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.myprofile {
+  width: 80%;
+  margin: auto;
+}
+
+.myprofile_group {
+  display: flex;
+  margin: 2rem;
+}
+
+.myprofile_mission,
+.myprofile_rockets {
+  width: 30%;
+}
+
+.myprofile_mission {
+  margin-right: 9%;
+}
+
+.item-border {
+  padding: 1rem;
+  border: 1px solid lightgray;
+}
+
+.group-title {
+  margin-bottom: 9%;
+}
+
+#rockets {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 2vh;
+  padding: 1rem 3rem;
+  font-size: large;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  height: 25vh;
+  display: flex;
+  gap: 1vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-img {
+  width: 15vw;
+  height: inherit;
+  display: flex;
+}
+
+.card-img img {
+  width: inherit;
+}
+
+.card-title {
+  margin-bottom: 1rem;
+}
+
+.card-description {
+  margin-bottom: 0.7rem;
+  line-height: 1.5;
+}
+
+.reserved {
+  background-color: #18a2b8;
+  color: #fff;
+  padding: 2px;
+  border-radius: 0.3em;
+  margin-right: 5px;
+}
+
+.reserve-btn {
+  background-color: #007bff;
+  padding: 1rem;
+  border: none;
+  color: #fff;
+  font-size: larger;
+  border-radius: 0.5em;
+}
+
+.cancel-btn {
+  background-color: #fff;
+  border: solid 1px #6d757d;
+  color: #6d757d;
+  font-size: larger;
+  padding: 1rem;
+  border-radius: 0.3em;
 }
