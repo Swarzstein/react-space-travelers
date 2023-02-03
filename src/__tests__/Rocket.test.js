@@ -1,7 +1,6 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import { Provider } from 'react-redux';
-import { createRoot } from 'react-dom/client';
 import Rocket from '../components/Rocket';
 import store from '../redux/store';
 

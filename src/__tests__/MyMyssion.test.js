@@ -7,4 +7,3 @@ it('renders without crashing', () => {
   const root = createRoot(div);
   root.render(<MyMission />);
 });
-
