@@ -37,7 +37,10 @@
 
 # 📖 Leaderboard App <a name="about-project"></a>
 
-**Space Travelers** Is a website app that fetches information about the [Space Travelers](pending). It's built in React.
+**Space Travelers** Is a website app that fetches information about the [Space-X API](https://docs.spacexdata.com/). It's built in React while pair programming with Kanban Board projects.
+
+ <img src="space_demo_picture.png" alt="project-demo-picture" width="340"  height="auto" />
+  <br/>
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -66,7 +69,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Space Travelers App](pending)
+- [Live Demo Space Travelers App](https://spacex-project-6lca.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -169,19 +172,6 @@ If you like this project please give us a star!
 
 I would like to thank Microverse for making the introduction.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FAQ (optional) -->
-
-## ❓ FAQ <a name="faq"></a>
-
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
